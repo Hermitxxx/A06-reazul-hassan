@@ -18,6 +18,10 @@ const Cards = ({ pricePromiseData, setCart, cart, page, setPage }) => {
     const handleToggle = (selected) => {
         setPage(selected)
     }
+
+    const handleCheckout = () => {
+        setCart([])
+    }
     return (
         <section>
             <div className="products text-center my-10 container mx-auto">
@@ -70,7 +74,7 @@ const Cards = ({ pricePromiseData, setCart, cart, page, setPage }) => {
                                                     </div>
                                                 }
                                                 {
-                                                    cart.length === 0 ? '' : <button className='btn w-full bg-brand-gradient rounded-full text-white'>
+                                                    cart.length === 0 ? '' : <button onClick={handleCheckout} className='btn w-full bg-brand-gradient rounded-full text-white py-5 md:py-6 hover:opacity-90 transition-all duration-200'>
                                                         Proceed to Checkout
                                                     </button>
                                                 }

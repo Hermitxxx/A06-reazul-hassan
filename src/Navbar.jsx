@@ -39,7 +39,7 @@ const Navbar = ({ setPage }) => {
                         </ul>
                     </div>
                     <div className="navbar-end gap-1 md:gap-2">
-                        <a href=""><ShoppingCart /></a>
+                        <a className='cursor-pointer'><ShoppingCart /></a>
                         <button className="btn btn-ghost rounded-full hidden sm:inline-flex">Login</button>
                         <button className="btn btn-sm md:btn-md rounded-full bg-brand-gradient text-white">Get Started</button>
                     </div>

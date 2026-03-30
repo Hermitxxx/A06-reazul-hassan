@@ -73,7 +73,7 @@ const Card = ({ price, setCart }) => {
                 ))}
             </ul>
 
-            <button onClick={handleCart} className='mt-6 w-full btn bg-brand-gradient text-white font-semibold p-6 rounded-full'>
+            <button onClick={handleCart} className='mt-6 w-full btn bg-brand-gradient hover:opacity-90 hover:scale-[1.02] transition-all duration-200 text-white font-semibold p-6 rounded-full'>
                 Buy Now
             </button>
         </div>
