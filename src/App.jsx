@@ -9,6 +9,7 @@ import Spinner from './Spinner'
 import GetStarted from './GetStarted'
 import SimplePricing from './SimplePricing'
 import Workflow from './Workflow'
+import Footer from './Footer'
 
 const pricePromise = axios.get('data.json')
 
@@ -41,6 +42,7 @@ function App() {
       <GetStarted></GetStarted>
       <SimplePricing></SimplePricing>
       <Workflow></Workflow>
+      <Footer></Footer>
     </>
   )
 }
