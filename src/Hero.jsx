@@ -10,7 +10,7 @@ const Hero = () => {
                 <div className=' space-y-5 '>
                     <div className='text-sm leading-relaxed inline-block bg-purple-100 text-purple-600 px-3 py-1 rounded-full'>✦ New: AI-Powered Tools Available</div>
                     <h1 className='text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#101727]'>Supercharge Your <span className='hidden md:inline'><br /></span> Digital Workflow</h1>
-                    <p className='text-gray-500'>Access premium AI tools, design assets, templates, and productivity <span className='hidden md:inline'><br /></span>
+                    <p className='text-gray-500 leading-relaxed'>Access premium AI tools, design assets, templates, and productivity <span className='hidden md:inline'><br /></span>
                         software—all in one place. Start creating faster today.
                     </p>
                     <div className='flex flex-wrap gap-2 md:gap-4 items-center'>
