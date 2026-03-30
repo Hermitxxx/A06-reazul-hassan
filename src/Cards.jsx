@@ -2,6 +2,7 @@
 import Card from './Card'
 import CartCard from './CartCard';
 import { ShoppingCart } from 'lucide-react';
+import { toast, Bounce } from 'react-toastify';
 
 const Cards = ({ pricePromiseData, setCart, cart, page, setPage }) => {
 
@@ -20,11 +21,22 @@ const Cards = ({ pricePromiseData, setCart, cart, page, setPage }) => {
     }
 
     const handleCheckout = () => {
+        toast.info('Proceed to checkout!', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            transition: Bounce,
+        });
         setCart([])
     }
     return (
         <section>
-            <div className="products text-center my-10 container mx-auto">
+            <div className="products text-center my-10 container mx-auto max-sm:px-3">
                 <h1 className='font-extrabold text-4xl mb-5'>Premium Digital Tools</h1>
                 <p className='opacity-80'>Choose from our curated collection of premium digital products designed</p>
                 <p className='opacity-80'>to boost your productivity and creativity.</p>

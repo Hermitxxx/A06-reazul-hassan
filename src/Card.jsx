@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast, Bounce } from 'react-toastify';
 
 // {
 //         "id": 1,
@@ -16,9 +17,45 @@ import React from 'react';
 //         "icon": "📝"
 //     }
 
-const Card = ({ price, setCart }) => {
+
+const Card = ({ price, setCart, cart }) => {
 
     const handleCart = () => {
+        const exist = cart.find(item => item.id === price.id)
+
+        if (!exist) {
+            toast.success(`Added to cart`, {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: false,
+                draggable: true,
+                progress: undefined,
+                style: {
+                    background: "linear-gradient(to right, #4F39F6, #9514FA)",
+                },
+                theme: "colored",
+                transition: Bounce,
+            });
+        }
+        else {
+            toast.success(`Added to cart`, {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: false,
+                draggable: true,
+                progress: undefined,
+                style: {
+                    background: "linear-gradient(to right, #4F39F6, #9514FA)",
+                },
+                theme: "colored",
+                transition: Bounce,
+            });
+        }
+
         setCart(currentCart => {
             const exist = currentCart.find(item => item.id === price.id)
 

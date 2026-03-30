@@ -10,6 +10,8 @@ import GetStarted from './GetStarted'
 import SimplePricing from './SimplePricing'
 import Workflow from './Workflow'
 import Footer from './Footer'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const pricePromise = axios.get('data.json')
 
@@ -43,6 +45,7 @@ function App() {
       <SimplePricing></SimplePricing>
       <Workflow></Workflow>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </>
   )
 }

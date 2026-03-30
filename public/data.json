@@ -88,50 +88,5 @@
             "Analytics dashboard"
         ],
         "icon": "📱"
-    },
-    {
-        "id": 7,
-        "name": "SEO Booster Pro",
-        "description": "Boost your website rankings with powerful keyword research, backlink tracking, and on-page SEO tools.",
-        "price": 59,
-        "period": "monthly",
-        "tag": "Popular",
-        "tagType": "popular",
-        "features": [
-            "Keyword research",
-            "Backlink tracker",
-            "Site audit reports"
-        ],
-        "icon": "🔍"
-    },
-    {
-        "id": 8,
-        "name": "Video Editing Suite",
-        "description": "Edit stunning videos with professional-grade tools, transitions, and effects right in your browser.",
-        "price": 89,
-        "period": "monthly",
-        "tag": "New",
-        "tagType": "new",
-        "features": [
-            "4K export",
-            "500+ transitions",
-            "AI background remover"
-        ],
-        "icon": "🎬"
-    },
-    {
-        "id": 9,
-        "name": "Email Marketing Kit",
-        "description": "Create, automate, and track email campaigns that convert leads into loyal customers.",
-        "price": 99,
-        "period": "yearly",
-        "tag": "Best Seller",
-        "tagType": "best-seller",
-        "features": [
-            "Unlimited emails",
-            "Drag & drop builder",
-            "Advanced analytics"
-        ],
-        "icon": "📧"
     }
 ]

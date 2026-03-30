@@ -1,8 +1,20 @@
 import React from 'react';
+import { toast, Bounce } from 'react-toastify';
 
 const CartCard = ({ price, setCart }) => {
 
     const handleCart = () => {
+        toast.error('Item removed from cart!', {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            transition: Bounce,
+        });
         setCart((currentCart) => {
             const filteredCart = currentCart.filter(item => item.id !== price.id)
             return filteredCart
