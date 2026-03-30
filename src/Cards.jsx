@@ -39,7 +39,7 @@ const Cards = ({ pricePromiseData, setCart, cart, page, setPage }) => {
             <div>
                 {
                     page === 'products' ?
-                        <div className='pricing-cards my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5 border container mx-auto place-items-center items-stretch auto-rows-fr'>
+                        <div className='pricing-cards my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 p-5 container mx-auto place-items-center items-stretch auto-rows-fr'>
                             {pricePromiseData.map(price => <Card key={price.id} cart={cart} setCart={setCart} price={price}></Card>)}
                         </div> :
 

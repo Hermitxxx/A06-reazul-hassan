@@ -6,6 +6,8 @@ import Hero from './Hero'
 import Navbar from './Navbar'
 import { Suspense, use, useState } from 'react'
 import Spinner from './Spinner'
+import GetStarted from './GetStarted'
+import SimplePricing from './SimplePricing'
 
 const pricePromise = axios.get('data.json')
 
@@ -35,6 +37,8 @@ function App() {
       <Suspense fallback={<Spinner></Spinner>}>
         <CardsSection cart={cart} setPage={setPage} page={page} setCart={setCart}></CardsSection>
       </Suspense>
+      <GetStarted></GetStarted>
+      <SimplePricing></SimplePricing>
     </>
   )
 }

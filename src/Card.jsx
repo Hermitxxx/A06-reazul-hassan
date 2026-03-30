@@ -34,7 +34,7 @@ const Card = ({ price, setCart }) => {
         })
     }
     return (
-        <div className='relative bg-white rounded-2xl shadow-lg p-6 border border-gray-200 w-11.5/12'>
+        <div className='relative bg-white rounded-2xl shadow-lg p-6 border border-gray-200 w-11/12 flex flex-col'>
             <span className={`absolute 
                     top-4 
                     right-4 
@@ -64,7 +64,7 @@ const Card = ({ price, setCart }) => {
                 <span className='text-gray-400 text-sm'>/{price.period}</span>
             </div>
 
-            <ul className='mt-4 space-y-2'>
+            <ul className='mt-4 space-y-2 flex-1'>
                 {price.features.map((feature) => (
                     <li key={feature} className='flex items-center gap-2 text-sm text-gray-600'>
                         <span className='text-green-500 font-bold'>✓</span>
