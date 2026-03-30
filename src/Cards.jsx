@@ -5,7 +5,6 @@ import { ShoppingCart } from 'lucide-react';
 
 const Cards = ({ pricePromiseData, setCart, cart, page, setPage }) => {
 
-    // console.log(cart)
     const getTotal = cart.map(item => {
         let itemPrice = item.price
         let itemQuantity = item.quantity
@@ -13,14 +12,8 @@ const Cards = ({ pricePromiseData, setCart, cart, page, setPage }) => {
         return itemPrice * itemQuantity
     })
 
-    // let total = 0
-    // for(let i = 0 ; i<=getTotal.length ; i++){
-    //     console.log(i);
-    //     total = total + i;
-    // }
+    const total = getTotal.reduce((acc, element) => acc + element, 0)
     // console.log(total);
-    console.log(getTotal);
-
 
     const handleToggle = (selected) => {
         setPage(selected)
@@ -73,7 +66,7 @@ const Cards = ({ pricePromiseData, setCart, cart, page, setPage }) => {
                                                 {
                                                     cart.length > 0 && <div className='flex px-2 items-center justify-between'>
                                                         <p className='opacity-80'>Total : </p>
-                                                        <p className='font-bold text-2xl'>$78</p>
+                                                        <p className='font-bold text-2xl'>${total}</p>
                                                     </div>
                                                 }
                                                 {
