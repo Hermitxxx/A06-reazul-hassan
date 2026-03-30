@@ -3,7 +3,7 @@ import React from 'react';
 const Workflow = () => {
     return (
         <section className='bg-brand-gradient p-5 md:p-10 lg:p-20 mt-16'>
-            <div className='text-center'>
+            <div className='text-center max-sm:py-8'>
                 <div className='space-y-4'>
                     <h1 className='text-4xl font-extrabold text-white'>Ready to Transform Your Workflow?</h1>
                     <p className='opacity-80 leading-relaxed text-white font-light'>

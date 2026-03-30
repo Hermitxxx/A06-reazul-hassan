@@ -36,7 +36,7 @@ const SimplePricing = () => {
                     <p className='opacity-80'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center auto-rows-fr items-stretch gap-5'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center auto-rows-fr items-stretch gap-8'>
 
                     {/* card1 */}
                     <div className='relative rounded-3xl p-8 w-11/12 bg-base-200 border border-base-300 flex flex-col'>
