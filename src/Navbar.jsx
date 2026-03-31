@@ -2,7 +2,7 @@ import React from 'react';
 import { ShoppingCart } from 'lucide-react';
 
 
-const Navbar = ({ setPage }) => {
+const Navbar = ({ setPage, cart }) => {
     const handlePage = (nextPage) => {
         setPage(nextPage)
     }
@@ -39,7 +39,10 @@ const Navbar = ({ setPage }) => {
                         </ul>
                     </div>
                     <div className="navbar-end gap-2">
-                        <a className='cursor-pointer'><ShoppingCart /></a>
+                        <div className='cursor-pointer relative'>
+                            <ShoppingCart />
+                            {cart.length > 0 && <span className='absolute w-4 h-4 rounded-full bg-orange-600 text-white flex items-center justify-center -right-2 -top-1 text-xs'>{cart.length}</span>}
+                        </div>
                         <button className="btn btn-ghost rounded-full hidden sm:inline-flex">Login</button>
                         <button className="btn btn-sm md:btn-md rounded-full bg-brand-gradient text-white">Get Started</button>
                     </div>
